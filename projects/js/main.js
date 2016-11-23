@@ -1,4 +1,4 @@
-var TOKEN = 'bdd7c5744876422f1180bc7896a9f5ee7d409637',
+var TOKEN = 'b44c3eef72cb69a56452ef36ab0ccf8d377ca09e',
     USER = '52admln';
 
 function renderData(data) {
