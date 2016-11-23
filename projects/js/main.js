@@ -1,5 +1,4 @@
-var TOKEN = 'b44c3eef72cb69a56452ef36ab0ccf8d377ca09e',
-    USER = '52admln';
+var USER = '52admln';
 
 function renderData(data) {
     var str = "";
@@ -23,7 +22,7 @@ function renderData(data) {
 
 function init() {
     // 此方法支持跨域调用
-    $.getJSON('https://api.github.com/users/'+USER+'/repos?access_token='+TOKEN+'', function (source,status) {
+    $.getJSON('https://api.github.com/users/'+USER+'/repos', function (source,status) {
         // console.log(source.data[0].id);
         console.log(status);
         if(status === 'success'){
