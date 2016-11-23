@@ -1,0 +1,309 @@
+html,
+body,
+div,
+ul,
+li,
+ol,
+a,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    color: #565a5f;
+    background: #f5f8f9;
+    font: 100% "Classic Grotesque W01", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
+}
+a {
+    color: #565a5f;
+    text-decoration: none;
+}
+code {
+    padding: 2px 4px;
+    color: #d14;
+    background-color: #f7f7f9;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+.fl {
+    float: left;
+    display: inline;
+}
+.fr {
+    float: right;
+    display: inline;
+}
+/* clear float */
+.cf {
+    zoom: 1;
+}
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+/* list items */
+.grid {
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.7);
+    -moz-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    width: 960px;
+    margin: 20px auto;
+    opacity: 0;
+}
+.header {
+    height: 110px;
+    margin: 0 10px 20px 10px;
+}
+.main {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.link {
+    text-decoration: underline;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    background: url("http://7u2lp3.com1.z0.glb.clouddn.com/avatar.jpg") no-repeat;
+    background-size: 50px 50px;
+    text-indent: -9999px;
+    margin-right: 15px;
+}
+.social {
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.social a {
+    font-size: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.social a:hover {
+    color: #38b7ea;
+}
+
+.title h2 {
+    font-size: 20px;
+}
+.title p {
+    font-size: 14px;
+}
+.title a:hover {
+    color: #38b7ea;
+    text-decoration: underline;
+}
+
+.repo {
+    position: relative;
+    float: left;
+    margin: 0 10px 20px 10px;
+    height: 248px;
+    width: 218px;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+.repo:hover {
+    border:1px solid #38b7ea;
+    transition: border-color .2s;
+}
+.repo > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.repo > a:hover h2 {
+    color: #38b7ea;
+    transition: color 0.2s;
+}
+
+.repo h2,
+.repo h3,
+.repo p {
+    margin: 10px 15px;
+}
+.repo h2 {
+    max-width: 160px;
+    font-size: 16px;
+    transition: color 0.2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.repo h2:hover {
+    color: #38b7ea;
+}
+.repo p {
+    font-size: 14px;
+    border-top: 1px dotted #efefef;
+    padding-top: 10px;
+    line-height: 2em;
+}
+
+
+/* tags */
+.repo:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 14px;
+    color: #efefef;
+}
+
+.repo.javascript:after {
+    content: 'JavaScript';
+}
+.repo.css:after {
+    content: 'CSS';
+}
+.repo.html:after {
+    content: 'HTML';
+}
+.repo.nodejs:after {
+    content: 'Node.JS';
+}
+.repo.project:after {
+     content: 'Project';
+ }
+
+.hidden {
+    display: none;
+}
+.animated {
+    animation: show 1s forwards;
+}
+@-moz-keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-left: 10%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.dot {
+    width: 24px;
+    height: 24px;
+    background: #3ac;
+    border-radius: 100%;
+    display: inline-block;
+    animation: slide 1s infinite;
+}
+.dot:nth-child(1) {
+    animation-delay: 0.1s;
+    background: #32aacc;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+    background: #64aacc;
+}
+.dot:nth-child(3) {
+    animation-delay: 0.3s;
+    background: #96aacc;
+}
+.dot:nth-child(4) {
+    animation-delay: 0.4s;
+    background: #c8aacc;
+}
+.dot:nth-child(5) {
+    animation-delay: 0.5s;
+    background: #faaacc;
+}
+@-moz-keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@-o-keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes slide {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
