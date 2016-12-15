@@ -61,7 +61,7 @@ i {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-image: url('http://7u2lp3.com1.z0.glb.clouddn.com/bg-default.jpg');
+	background-image: url('../images/bg-default.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -224,5 +224,3 @@ i {
 .tip p {
 	letter-spacing: 2px;
 }
-
-

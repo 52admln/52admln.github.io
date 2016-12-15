@@ -17,6 +17,6 @@ function ramImg() {
 	var maxNum = 3;
 	var bg_img = document.querySelector("#bg-img");
 	var ramNum = Math.ceil(Math.random() * maxNum);
-	var img_url = "url('http://7u2lp3.com1.z0.glb.clouddn.com/img-" + ramNum + ".jpg')"; 
+	var img_url = "url('../images/img-" + ramNum + ".jpg')";
 	bg_img.style.backgroundImage = img_url;
 }
