@@ -6,10 +6,10 @@ window.onload = function () {
 
 function showDays() {
 	var curDate = new Date();
-	var sinceDate = new Date(2013,8,28);
+	var sinceDate = new Date(2017,1,8);
 	var time = curDate.getTime() - sinceDate.getTime();
 	var days = parseInt(time/1000/60/60/24);
-	console.log("Wyj & Czy");
+	console.log("Wyj & Cyc");
 	console.log("We have been together for " + days + " days.");
 }
 
