@@ -6,7 +6,7 @@ window.onload = function () {
 
 function showDays() {
 	var curDate = new Date();
-	var sinceDate = new Date(2017,1,8);
+	var sinceDate = new Date(2017,0,8);
 	var time = curDate.getTime() - sinceDate.getTime();
 	var days = parseInt(time/1000/60/60/24);
 	console.log("Wyj & Cyc");
