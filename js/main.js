@@ -9,8 +9,8 @@ function showDays() {
 	var sinceDate = new Date(2017,0,8);
 	var time = curDate.getTime() - sinceDate.getTime();
 	var days = parseInt(time/1000/60/60/24);
-	console.log("Wyj & Cyc");
-	console.log("We have been together for " + days + " days.");
+	console.log("Wyj");
+	console.log(days + " days.");
 }
 
 function ramImg() {
