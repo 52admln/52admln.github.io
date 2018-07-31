@@ -8,13 +8,13 @@ branches:
   - master
 # 缓存，可以节省集成的时间
 cache:
+  npm: true
   directories:
     - node_modules
 # tarvis生命周期执行顺序详见官网文档
 before_install:
 - git config --global user.name "52admln"
 - git config --global user.email "ismrwang@gmail.com"
-- git clone --branch gh-pages https://${REPO_URL} dist
 - npm install -g parcel-bundler
 install:
 - npm i
@@ -22,6 +22,7 @@ script:
 - npm run build
 after_success:
 - cd dist
+- git init
 - git add --all .
 - git commit -m "Automatically update from travis-ci"
 # 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
