@@ -1,0 +1,18 @@
+{
+  "name": "52admln.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "rm -rf dist && parcel build ./src/index.html"
+  },
+  "devDependencies": {
+    "cssnano": "^4.0.5",
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.0.2",
+    "postcss-modules": "^1.3.2"
+  }
+}
