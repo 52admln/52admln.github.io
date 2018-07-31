@@ -26,4 +26,4 @@ after_success:
 - git add --all .
 - git commit -m "Automatically update from travis-ci"
 # 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
-- git push --quiet --force "https://${REPO_TOKEN}@{REPO_URL}$" gh-pages:gh-pages
+- git push --quiet --force "https://${REPO_TOKEN}@{REPO_URL}$" master:gh-pages
