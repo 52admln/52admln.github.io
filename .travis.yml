@@ -19,7 +19,7 @@ before_install:
 install:
 - npm i
 script:
-- npm build
+- npm run build
 after_success:
 - cd dist
 - git add --all .
