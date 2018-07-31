@@ -1,0 +1,28 @@
+# 使用语言
+language: node_js
+# node版本
+node_js: stable
+# 设置只监听哪个分支
+branches:
+  only:
+  - master
+# 缓存，可以节省集成的时间
+cache:
+  directories:
+    - node_modules
+# tarvis生命周期执行顺序详见官网文档
+before_install:
+- git config --global user.name "52admln"
+- git config --global user.email "ismrwang@gmail.com"
+- git clone --branch gh-pages https://${REPO_URL} dist
+- npm install -g parcel-bundler
+install:
+- npm i
+script:
+- npm build
+after_success:
+- cd dist
+- git add --all .
+- git commit -m "Automatically update from travis-ci"
+# 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
+- git push --quiet --force https://$REPO_TOKEN@$REPO_URL gh-pages:gh-pages
