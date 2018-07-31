@@ -5,7 +5,7 @@ node_js: stable
 # 设置只监听哪个分支
 branches:
   only:
-  - master
+  - source
 # 缓存，可以节省集成的时间
 cache:
   npm: true
