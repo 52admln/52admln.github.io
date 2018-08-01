@@ -1,36 +1,50 @@
 @font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro"), url("./fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro'),
+    url('./fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Light"), url("./fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Light'),
+    url('./fonts/Source_Sans_Pro/SourceSansPro-Light.ttf');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Semibold"), url("./fonts/Source_Sans_Pro/SourceSansPro-Semibold.ttf");
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro Semibold'),
+    url('./fonts/Source_Sans_Pro/SourceSansPro-Semibold.ttf');
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "Dosis";
-  src: local("Dosis Medium"), url("./fonts/Dosis/Dosis-Medium.ttf");
+  font-family: 'Dosis';
+  src: local('Dosis Medium'), url('./fonts/Dosis/Dosis-Medium.ttf');
   font-weight: 500;
 }
 
-html, body, div, h2, h4, span, i, a {
+html,
+body,
+div,
+h2,
+h4,
+span,
+i,
+a {
   margin: 0;
   padding: 0;
 }
-
+html,
 body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  position: relative;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
 }
 
 a {
@@ -106,7 +120,7 @@ body::before {
     }
 
     &:nth-child(1) {
-      animation-delay: .5s;
+      animation-delay: 0.5s;
     }
 
     &:nth-child(2) {
@@ -146,7 +160,7 @@ body::before {
 
   &__name {
     position: relative;
-    font-family: "Dosis", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
     letter-spacing: 2px;
     font-size: 18px;
     font-weight: normal;
@@ -180,7 +194,7 @@ body::before {
     &:hover {
       .popover {
         display: block;
-        animation: fade-in .3s linear 1, move-up .3s linear 1;
+        animation: fade-in 0.3s linear 1, move-up 0.3s linear 1;
       }
     }
   }
@@ -273,7 +287,6 @@ body::before {
       color: #8b8c90;
     }
   }
-
 }
 
 @media screen and (max-width: 320px) {
@@ -309,7 +322,6 @@ body::before {
     display: none;
   }
 }
-
 
 @media screen and (max-width: 620px) and (min-width: 321px) {
   .container {
