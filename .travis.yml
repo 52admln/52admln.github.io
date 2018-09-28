@@ -17,6 +17,10 @@ before_install:
 - git config --global user.email "ismrwang@gmail.com"
 - npm install -g parcel-bundler
 install:
+- git clone https://github.com/git-ftp/git-ftp.git
+- cd git-ftp
+- git checkout 1.1.0
+- sudo make install
 - npm i
 script:
 - npm run build
@@ -27,3 +31,4 @@ after_success:
 - git commit -m "Automatically update from travis-ci"
 # 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
 - git push --quiet --force "https://${REPO_TOKEN}@${REPO_URL}" master:master
+- git ftp push --user ${user} --passwd ${sn} ftp://server-cn.52admin.net/public_html
