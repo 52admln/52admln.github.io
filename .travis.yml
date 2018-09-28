@@ -31,6 +31,6 @@ after_success:
 deploy:
   skip_cleanup: true
   provider: script
-  script: node deploy.js
+  script: node ../deploy.js
   on:
     branch: source
