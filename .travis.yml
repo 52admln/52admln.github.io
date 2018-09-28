@@ -26,13 +26,13 @@ script:
 - npm run build
 after_success:
 - cd dist
-- git init
-- git add --all .
-- git commit -m "Automatically update from travis-ci"
-# 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
-- git push --quiet --force "https://${REPO_TOKEN}@${REPO_URL}" master:master
 - git config git-ftp.url "ftp://server-cn.52admin.net:21/public_html"
 - git config git-ftp.user ${user}
 - git config git-ftp.password ${sn}
 - git ftp init
 - git ftp push
+- git init
+- git add --all .
+- git commit -m "Automatically update from travis-ci"
+# 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
+- git push --quiet --force "https://${REPO_TOKEN}@${REPO_URL}" master:master
