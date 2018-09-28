@@ -17,20 +17,11 @@ before_install:
 - git config --global user.email "ismrwang@gmail.com"
 - npm install -g parcel-bundler
 install:
-- git clone https://github.com/git-ftp/git-ftp.git
-- cd git-ftp
-- git checkout 1.1.0
-- sudo make install
 - npm i
 script:
 - npm run build
 after_success:
 - cd dist
-- git config git-ftp.url "ftp://server-cn.52admin.net:21/public_html"
-- git config git-ftp.user ${user}
-- git config git-ftp.password ${sn}
-- git ftp init
-- git ftp push
 - git init
 - git add --all .
 - git commit -m "Automatically update from travis-ci"
