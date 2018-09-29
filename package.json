@@ -9,8 +9,7 @@
   },
   "devDependencies": {
     "cssnano": "^4.0.5",
-    "node-sass": "^4.9.2",
-    "ftp-deploy": "^2.1.3"
+    "node-sass": "^4.9.2"
   },
   "dependencies": {
     "autoprefixer": "^9.0.2",
