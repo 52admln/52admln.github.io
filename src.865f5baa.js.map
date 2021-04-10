@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":[],"mappings":";;;;;;;AAEA,aAFA,QAAA,6BACA,QAAA,mDACA,QAAA","file":"src.865f5baa.js","sourceRoot":"../src","sourcesContent":["import './style/normalize.min.css'\nimport './plugins/font-awesome/css/font-awesome.min.css'\nimport './style/index.scss'\n"]}
